@@ -31,5 +31,5 @@ Nota: O ideal para que o sistema continue funcionando de forma mais fácil seria
 
 
 <b> VEJA O SISTEMA ONLINE </b>
-Acesse esse link e cadastre-se pelo Facebook: http://yeebaplay.com.br/yeeba/u/pages/index.php
+Acesse esse link e cadastre-se pelo Facebook: http://yeebaplay.com.br/yeeba/
 
