@@ -1,0 +1,37 @@
+# $Id: .htaccess 9977 2013-03-19 20:51:56Z dco $
+
+FileETag None
+
+#Medidas para bloquear ataques de injeção de SQL
+RewriteCond %{QUERY_STRING} .*(/\*|union|select|insert|cast|set|declare|drop|update|md5|benchmark) [NC]
+RewriteRule .* - [R=406,L]
+# Bloquear uso de caracteres ilegais ou inseguro na solicitação HTTP
+RewriteCond %{THE_REQUEST} ^.*(\\r|\\n|%0A|%0D).* [NC,OR]
+# Bloquear uso de caracteres ilegais ou inseguro na Variável Referer da solicitação HTTP
+RewriteCond %{HTTP_REFERER} ^(.*)(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC,OR]
+#Bloquear uso de caracteres ilegais ou inseguro em qualquer cookie associado com a solicitação HTTP
+RewriteCond %{HTTP_COOKIE} ^.*(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC,OR]
+# Bloquear uso de caracteres ilegais em URI ou uso de URI malformado
+RewriteCond %{REQUEST_URI} ^/(,|;|:|<|>|">|"<|/|\\\.\.\\).{0,9999}.* [NC,OR]
+# Bloquear uso de Agentes de conexão vazias pelo usuário
+# OBS - desativar esta regra se o site é integrado com meios de pagamento, como o PayPal
+#RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+# Bloquear uso de caracteres ilegais ou inseguro na variável User Agent
+RewriteCond %{HTTP_USER_AGENT} ^.*(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC,OR]
+# Bloquear referência a localhost/loopback/127.0.0.1 na consulta
+RewriteCond %{QUERY_STRING} ^.*(localhost|loopback|127\.0\.0\.1).* [NC,OR]
+# Bloquear uso de caracteres ilegais ou inseguro na variável de seqüência de consulta
+RewriteCond %{QUERY_STRING} ^.*(<|>|'|%0A|%0D|%27|%3C|%3E|%00).* [NC]
+
+ 
+<IfModule mod_php5.c> 
+ #php_value post_max_size 2048M 
+ php_value upload_max_filesize 8388608M 
+ php_value max_input_time 600 
+ php_value max_execution_time 600 
+ #php_value memory_limit 1024M
+ #php_value zlib.output_compression on 
+ </IfModule>
+ 
+
+ErrorDocument 404 http://yeeba.me/404.html

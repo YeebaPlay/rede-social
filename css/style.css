@@ -1,0 +1,1157 @@
+a:link, a:visited  {
+  text-decoration: none
+  }
+a:hover {
+  text-decoration: none; 
+  }
+a:active {
+  text-decoration: none
+  }
+
+.textarea-perguntas
+{
+    width: 100%;
+}
+
+.rodape-box-pergunta
+{
+    font-size:12px;
+    width: 97%;
+    height: 36px;
+    color: #4B4B4B;
+    font-family: "Arial";
+}
+
+.pontos
+{
+  margin-left: 20px;
+  margin-top: -45px;
+}
+
+.post-fino
+{
+    background-image: url(icon.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+
+    padding: 0px 7px;
+    color: #888888;
+    height: 35px;
+    text-indent: 20px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 2s;
+    transition: all 0.2s;
+    
+    width: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: right;
+}
+
+.post-fino:focus {
+    /* Picked a random icon from Google */
+    background-position: -25px center;
+    text-indent: 0;
+}
+
+.wrap_post{
+  word-wrap: break-word;
+  max-width: 570px;
+}
+
+.button-carregar{
+    width:200px;
+    color: #FFF;
+    background-color:#27ae60;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    font-weight:500;
+    text-align:center;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-family:'Arial', sans-serif;
+    margin-bottom:20px;
+}
+
+.button-carregar:hover{
+    background-color:#2ecc71;
+    width:200px;
+    color: #FFF;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    font-weight:500;
+    text-align:center;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-family:'Arial', sans-serif;
+    margin-bottom:20px;
+}
+
+.imagem-perfil{
+    border-radius: 260px 260px 260px 260px;
+    float: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-perfil-respostas{
+    border-radius: 260px 260px 260px 260px;
+    float: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ===================================== */
+
+/* Categoria de apostilas */
+
+a.tooltipscategoria {
+  position: relative;
+  display: inline;
+}
+a.tooltipscategoria span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #3EBC6B;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 7px;
+}
+a.tooltipscategoria span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -11px;
+  width: 0; height: 0;
+  border-top: 8px solid #3EBC6B;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltipscategoria span {
+  visibility: visible;
+  opacity: 1;
+  bottom: 10px;
+  left: 60%;
+  margin-left: -42px;
+  z-index: 999;
+  font-size:14px;
+  font-family:sans-serif, arial;
+
+}
+
+/*Na parte dos pontos*/
+
+a.tooltipspontos {
+  position: relative;
+  display: inline;
+}
+a.tooltipspontos span {
+  position: absolute;
+  width:300px;
+  color: #FFFFFF;
+  background: #47BA6F;
+  height: auto;
+  margin-left: -60px;
+  line-height: 45px;
+  text-align: center;
+  visibility: hidden;
+}
+a.tooltipspontos span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #47BA6F;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltipspontos span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 40px;
+  left: 60%;
+  margin-left: -148px;
+  z-index: 999;
+  font-size:11px;
+  font-family: sans-serif, arial;
+
+}
+
+.descricao
+{
+    font-size:12px;
+    margin: 3px;
+    margin-right: 2px;
+    width: auto;
+    height: 50px;
+    background-color: #F5F5F5;
+    color: #4B4B4B;
+    font-family: "Arial";
+}
+
+.conteudo
+{
+    font-size:12px;
+    margin: 2px;
+    margin-right: 2px;
+    width: 400px;
+    height: 20px;
+    background-color: #F5F5F5;
+    color: #4B4B4B;
+    font-family: "Arial";
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+/* Parte de anotações */
+
+a.tooltipsnota {
+  position: relative;
+  display: inline;
+}
+a.tooltipsnota span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #3EBC6B;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 7px;
+}
+a.tooltipsnota span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #3EBC6B;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltipsnota span {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+  left: 60%;
+  margin-left: -70px;
+  z-index: 999;
+  font-size:14px;
+  font-family:sans-serif, arial;
+
+}
+
+
+/* Parte de download */
+
+a.tooltipsbusca {
+  position: relative;
+  display: inline;
+}
+a.tooltipsbusca span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #3EBC6B;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 7px;
+}
+a.tooltipsbusca span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #3EBC6B;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltipsbusca span {
+  visibility: visible;
+  opacity: 1;
+  bottom: 30px;
+  left: 60%;
+  margin-left: -70px;
+  z-index: 999;
+  font-size:14px;
+  font-family:sans-serif, arial;
+
+}
+
+
+.botaoPost{
+
+    float: left;
+    width: auto;
+    padding-right: 10px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 12px;
+    font-family: sans-serif, "arial";
+    color: #555;
+    margin-top: 3px;
+}
+
+.box-postagem-resposta
+{
+    font-size:14px;
+    margin-bottom: 2px;
+    width: 99%;
+    color: #4B4B4B;
+    font-family: sans-serif, "Arial";
+    height: auto;
+    padding: 1px;
+}
+
+.balao-resposta{
+    background: #F5F5F5;
+    border-radius: 0 10px 10px 0;
+    width: 200px;
+    height: auto;
+    padding:15px;
+    color: #555;
+
+    /* Position relative para a seta não exceder os limites do balão, já que vamos usar position absolute nele */
+    position: relative;
+
+    margin-bottom: 1em;
+}
+.balao-resposta:after{
+    /* content necessário para a criação de um elemento vazio */
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    /* position: absolute para manipularmos a posição da seta */
+    position: absolute;
+
+    /* Right com valor negativo para ele ficar para fora do balão de dialogo */
+    right: 98%;
+    top: -3px;
+
+    /* E aqui o truque com as bordas */
+    /* 50px é a metade da altura do elemento, assim temos uma seta da mesma altura que nosso elemento */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid #F5F5F5;
+
+    border-radius: 80%;
+
+}
+
+.wrap_post{
+    width: auto;
+    word-wrap: break-word;
+}
+
+.email-form
+{
+    background-position: 2px center;
+    background-repeat: no-repeat;
+    background-color: #F9F9F9;
+    border: 1px solid #ccc;
+
+    padding: 0px 12px;
+    color: #888888;
+    height: 35px;
+    text-indent: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 2s;
+    transition: all 0.2s;
+    margin-top: 5px;
+    width: 99%;
+    margin-bottom: 5px;
+  
+    border-width: 0px;
+}
+
+.email-form:focus {
+    /* Picked a random icon from Google */
+    background-position: -25px center;
+    text-indent: 0;
+    border-width: 0px;
+}
+
+.circle{
+    width:25px;
+    height:25px;
+    border-radius:50px;
+    font-size:15px;
+    color:#fff;
+    line-height:26px;
+    text-align: center;
+    background:#00B259;
+    font-size: 11px;
+}
+
+
+
+.msg-assunto
+{
+
+    font-size:10px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #FFF;
+    font-size: 14px;
+    font-family: sans-serif, "Arial";
+    background-color: #00A3D9;
+    height: auto;
+}
+
+.msg-assunto:after {
+
+    /* content necessário para a criação de um elemento vazio */
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    /* position: absolute para manipularmos a posição da seta */
+    position: absolute;
+
+}
+
+.batepapo
+{
+    font-size:14px;
+    margin-bottom: 2px;
+    width: 99%;
+    color: #4B4B4B;
+    font-family: sans-serif, "Arial";
+    height: auto;
+    padding: 1px;
+}
+
+.balao-remetente{
+    background: #00B863;
+    width: 200px;
+    height: auto;
+    padding:15px;
+    color: #F5F5F5;
+
+    /* Position relative para a seta não exceder os limites do balão, já que vamos usar position absolute nele */
+    position: relative;
+
+    margin-bottom: 1em;
+}
+.balao-remetente:after{
+    /* content necessário para a criação de um elemento vazio */
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    /* position: absolute para manipularmos a posição da seta */
+    position: absolute;
+
+    /* Right com valor negativo para ele ficar para fora do balão de dialogo */
+    right: 98%;
+    top: -3px;
+
+    /* E aqui o truque com as bordas 00B863*/
+    /* 50px é a metade da altura do elemento, assim temos uma seta da mesma altura que nosso elemento */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid #00B863;
+    border-radius: 80%;
+
+}
+
+.balao-destinatario{
+    background: #DCDEE7;
+    width: 200px;
+    height: auto;
+    padding:15px;
+    color: #555;
+
+    /* Position relative para a seta não exceder os limites do balão, já que vamos usar position absolute nele */
+    position: relative;
+
+    margin-bottom: 1em;
+}
+
+.balao-destinatario:after{
+    /* content necessário para a criação de um elemento vazio */
+    content: "";
+    width: 0;
+    height: 0;
+    /* position: absolute para manipularmos a posição da seta */
+    position: absolute;
+    /* Right com valor negativo para ele ficar para fora do balão de dialogo */
+    right: -29px;
+    top: -3px;
+
+    /* E aqui o truque com as bordas */
+    /* 50px é a metade da altura do elemento, assim temos uma seta da mesma altura que nosso elemento */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #DCDEE7;
+    border-right: 20px solid transparent;
+    border-radius: 80%;
+}
+
+.visual-notas{
+    width: 99%;
+    height: auto;
+    background-color:#FFF;
+    padding: 5px;
+    margin: 3px;
+    float: left;
+ 
+    border-bottom:1px solid #CCC;
+}
+
+.visual-notas-import{
+    width: 97%;
+    height: auto;
+    background-color: #FFEEE8;
+    padding: 5px;
+    margin: 3px;
+    float: left;
+    border-top:2px solid #D90000;
+    border-left:2px solid #D90000;
+    border-right:2px solid #D90000;
+    border-bottom:2px solid #D90000;
+}
+
+/* Barra de progresso */
+
+
+#upload-wrapper {
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#upload-wrapper h3 {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
+    margin-top: -30px;
+    border-bottom: 1px dotted #DDD;
+}
+#upload-wrapper input[type=file] {
+    border: 1px solid #DDD;
+    padding: 6px;
+    background: #FFF;
+    border-radius: 5px;
+}
+
+#output{
+    padding: 5px;
+    font-size: 12px;
+}
+#output img {
+    border: 1px solid #DDD;
+    padding: 5px;
+}
+
+/*=============== UPLOAD IMAGE =========== */
+
+
+
+
+
+
+/*========================== */
+
+/* progress bar style */
+#progressbox {
+    border: 1px solid #48B96E;
+    padding: 1px;
+    position:relative;
+    width:80%;
+    border-radius: 3px;
+    margin: 5px;
+    display:none;
+    text-align:left;
+}
+
+#progressboxlateral {
+    border: 1px solid #92C8DA;
+    padding: 1px;
+    position:relative;
+    width:265px;
+    border-radius: 3px;
+    margin: 5px;
+    display:none;
+    text-align:left;
+}
+
+#progressbar {
+    height:20px;
+    border-radius: 3px;
+    background-color: #48B96E;
+    width:1%;
+}
+#statustxt {
+    top:3px;
+    left:45%;
+    position:absolute;
+    display:inline-block;
+    color: #000000;
+}
+
+.nome-perfil
+{
+  color: #444444;
+  font-family: Arial, Verdana;
+  font-size: 20px;
+}
+
+.conteudo
+  {
+    font-size:12px;
+    margin: 2px;
+    margin-right: 2px;
+    width: 99,8%;
+    height: 20px;
+    background-color: #F5F5F5;
+    color: #4B4B4B;
+    font-family: "Arial";
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+  }
+
+.pontos
+{
+  margin-top: 2px;
+  margin-right: 2px;
+}
+
+.button-cadastrar
+{
+    border-radius: 260px 260px 260px 260px;
+    width:150px;
+    color: #FFF;
+    background-color:#27ae60;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    font-weight:500;
+    text-align:center;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-family:'Arial', sans-serif;
+    margin-bottom:20px;
+}
+
+.button-cadastrar:hover{
+  border-radius: 260px 260px 260px 260px;
+  background-color:#2ecc71;
+  width:150px;
+    color: #FFF;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    font-weight:500;
+    text-align:center;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-family:'Arial', sans-serif;
+    margin-bottom:20px;
+}
+
+.button-add-forum{
+    width:110px;
+    color: #FFF;
+    background-color:#27ae60;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    font-weight:500;
+    text-align:center;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-family:'Arial', sans-serif;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.button-add-forum:hover{
+  background-color:#2ecc71;
+  width:110px;
+    color: #FFF;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    font-weight:500;
+    text-align:center;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-family:'Arial', sans-serif;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.conteudo-forum
+  {
+    border-radius: 260px 260px 260px 260px;
+    font-size:12px;
+    margin: 5px;
+    margin-right: 2px;
+    width: auto;
+    height: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #27ae60;
+    color: #FFF;
+    font-family: sans-serif, arial;
+    float: left;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+  }
+
+.conteudo-forum:hover
+  {
+    font-size:12px;
+    margin: 5px;
+    margin-right: 2px;
+    width: auto;
+    height: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #B20000;
+    color: #FFF;
+    font-family: sans-serif, arial;
+    float: left;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background-image: url("fundocss.png");
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+.realupload {width: 80%; float: left; height:50px; opacity:0.0; cursor: pointer;   -moz-opacity: 0.0;     filter: alpha(opacity = 0);}
+.realupload-imagem {background: url("icon_imagem.png") no-repeat; width: 30px;  float: left;}
+.realupload-imagem-btn {width: 30px; float: left; height:25px; opacity:0.0; cursor: pointer;   -moz-opacity: 0.0;     filter: alpha(opacity = 0);}
+#imgfundo {background: url("fotoatual.png") no-repeat; width:80%; float: left; }
+#imgfundopreto {background: url("upimgpreto.png") no-repeat; width:80%; height:50px; float: left;}
+
+
+.conteudo-perfil-ultimos
+{
+  font-size:12px;
+  margin: 5px;
+  margin-right: 2px;
+  width: 100%;
+  height: auto;
+  color: #4B4B4B;
+  font-family: sans-serif;
+  float: left;
+  cursor: pointer;
+}
+
+.conteudo-perfil-ultimos:hover
+  {
+  font-size:12px;
+  margin: 5px;
+  margin-right: 2px;
+  width: 100%;
+  height: auto;
+  color: #4B4B4B;
+  font-family: sans-serif;
+  float: left;
+  }
+
+
+.conteudo-perfil
+  {
+  font-size:12px;
+  margin: 5px;
+  margin-right: 2px;
+  width: 32%;
+  height: auto;
+  background-color: #F5F5F5;
+  color: #4B4B4B;
+  font-family: "Arial";
+  float: left;
+  border-top:1px solid #ccc;
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  }
+
+.conteudo-perfil:hover
+  {
+  font-size:12px;
+  margin: 5px;
+  margin-right: 2px;
+  width: 32%;
+  height: auto;
+  background-color: #FFF;
+  color: #4B4B4B;
+  font-family: "Arial";
+  float: left;
+  border-top:1px solid #ccc;
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  }
+
+.busca_geral
+{
+  font-size:12px;
+  margin-bottom: 8px;
+  width: 100%;
+  color: #4B4B4B;
+  font-family: "Arial";
+  border-top:1px solid #E9E9E9;
+  border-left:4px solid #3EBC6B;
+  border-right:1px solid #E9E9E9;
+  border-bottom:1px solid #E9E9E9;
+  height: auto;
+  padding: 1px;
+  margin-left: 5px;
+}
+
+.foto-perfil-user-publico{
+   border-radius: 260px 260px 260px 260px;
+    margin-top: -45px;
+    left: 50%;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.foto-perfil-home{
+   border-radius: 260px 260px 260px 260px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.foto-perfil
+{
+  border-radius: 260px 260px 260px 260px;
+    width: 50px;
+    height: 50px;
+}
+
+.foto-mensagem
+{
+  border-radius: 260px 260px 260px 260px;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.msg-photo{
+  border-radius: 260px 260px 260px 260px;
+  width: 30px;
+  height: 30px;
+}
+
+/* botão de user adicionar*/
+
+.botao-adicionar , .botao-adicionar :visited{
+  width: 80px;
+  background-color: #00A3D9;
+  height: 30px;
+  font-weight:bold;
+  padding-left: 30px;
+  border: 0px;
+  color:#FFF;
+  font-family:Arial, Verdana, Geneva, sans-serif;
+  font-size:13px;
+  background: url(botao/add.png) no-repeat;
+  display:block;
+  }
+
+.botao-adicionar:hover{
+  width: 80px;
+  background-color: #00A3D9;
+  height: 30px;
+  font-weight:bold;
+  padding-left: 30px;
+  border: 0px;
+  color:#FFF;
+  font-family:Arial, Verdana, Geneva, sans-serif;
+  font-size:13px;
+  background: url(botao/add_r.png) no-repeat;
+  }
+
+  /* botão de user adicinado*/
+
+.botao-adicionado , .botao-adicionado :visited{
+  width: 80px;
+  background-color: #00A3D9;
+  height: 30px;
+  font-weight:bold;
+  padding-left: 30px;
+  border: 0px;
+  color:#FFF;
+  font-family:Arial, Verdana, Geneva, sans-serif;
+  font-size:13px;
+  background: url(botao/remove.png) no-repeat;
+  display:block;
+  }
+
+.botao-adicionado:hover{
+  width: 80px;
+  background-color: #00A3D9;
+  height: 30px;
+  font-weight:bold;
+  padding-left: 30px;
+  border: 0px;
+  color:#FFF;
+  font-family:Arial, Verdana, Geneva, sans-serif;
+  font-size:13px;
+  background: url(botao/remove_a.png) no-repeat;
+  }
+
+.info-perfil
+{
+  font-size: 12px;
+}
+
+.perfil-descricao
+  {
+  font-size: 12px;
+  color: #888;
+  margin-right: 2px;
+  width: 100%;
+  height: 35px;
+  font-family: "Arial";
+
+  }
+
+  .nome-perfil-usuario
+  {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #F5F5F5;
+  }
+
+
+/*===================AUTO COMPLETE=======================*/
+.header {
+  padding: 10px;
+}
+.main_title {
+  background: #cccccc;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: right;
+}
+.footer a {
+  color: #999999;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.label_div {
+  width: 120px;
+  float: left;
+  line-height: 28px;
+}
+.input_container {
+  height: 30px;
+  float: left;
+  margin-top: -6px;
+}
+
+.input_container ul {
+  width: 230px;
+  border: 2px solid #00B22D;
+  position: absolute;
+  padding: 5px;
+  z-index: 9;
+  background: #F5F5F5;
+  list-style: none;
+  margin-top: 35px;
+  color: #000;
+}
+.input_container ul li {
+  padding: 2px;
+  color: #000;
+}
+.input_container ul li:hover {
+  background: #eaeaea;
+}
+#country_list_id {
+  display: none;
+}
+
+.comentario-post{
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.data-comentario-post{
+  font-size: 10px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.foto-comentario{
+  border-radius: 260px 260px 260px 260px;
+}
+
+.postagem-comentario-wrap{
+  margin-bottom: 7px;
+  margin-left: 15px;
+}
+
+/* EFEITO SANFONA */
+
+.accordions{
+  width:auto;
+  margin:0 auto;
+  text-align: right;
+  font-family: sans-serif;
+  color: #777;
+  padding-right: 10px;
+  }
+
+.accordion-item input{display:none;}
+
+.accordion-item label{
+  display:block;
+  cursor:pointer;
+  font-size: 12px;
+  }
+
+.accordion-content{
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  -ms-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  }
+
+  [id^=accordion]:checked ~ .accordion-content {
+      height: auto;
+  }
+
+/*===================== SANFONA COMENTÁRIOS ===============*/
+
+
+/*=================FIM AUTOCOMPLETE========================*/
+
+.conteudo-forum-explorar
+    {
+        border-radius: 260px 260px 260px 260px;
+        font-size:12px;
+        margin: 5px;
+        margin-right: 2px;
+        width: auto;
+        height: auto;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: #27ae60;
+        color: #FFF;
+        font-family: sans-serif, arial;
+        float: left;
+        border-top:1px solid #ccc;
+        border-left:1px solid #ccc;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+    }
+
+.conteudo-forum-explorar:hover
+    {
+    font-size:12px;
+    margin: 5px;
+    margin-right: 2px;
+    width: auto;
+    height: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #0080FF;
+    color: #FFF;
+    font-family: sans-serif, arial;
+    float: left;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background-image: url("fundo_explorar.png");
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+
+/*=============== FONTES ======================*/
+
+.font-mensagem-nome{
+  font-family: sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.font-mensagem-data{
+  font-family: sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.font-nome-perfil{
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #00A3D9;
+}
+
+.font-curso-perfil{
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+/*==============================================*/
+.mensagem-recebidas         { font-size: 16px; width: 98%; margin: 5px; padding: 3px; text-decoration: none;}
+.mensagem-recebidas:active  { background-color: #E1FFF0; font-size: 16px; width: 98%; margin: 5px; padding: 3px; text-decoration: none;}
+.mensagem-recebidas:visited { background-color: #E1FFF0; font-size: 16px; width: 98%; margin: 5px; padding: 3px; text-decoration: none;}
+.mensagem-recebidas:hover   { background-color: #E1FFF0; font-size: 16px; width: 98%; margin: 5px; padding: 3px; text-decoration: none;}
+/*==============================================*/

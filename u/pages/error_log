@@ -1,0 +1,2 @@
+[10-Apr-2016 20:05:51 America/Chicago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atima136/public_html/sites/yeeba.me/u/pages/logar.php on line 96
+[10-Apr-2016 20:05:51 America/Chicago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atima136/public_html/sites/yeeba.me/u/pages/logar.php on line 97
